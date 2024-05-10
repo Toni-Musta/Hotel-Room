@@ -1,0 +1,340 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    font-family: 'Alex Brush', cursive;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Satisfy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Yeseva One', cursive;
+    font-family: 'Gilda Display', serif;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Great Vibes', serif;
+    font-family: 'Bellefair', serif;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+::selection{
+    color: white;
+    background-color:#a9d5e2 ;
+  }
+/*************NAVBAR**************/
+.navbar-brand-flag{
+  padding-left: 20px;
+  padding-top: 12px;
+}
+.navbar{
+    background-color: white;
+}
+.navbar li{
+    margin: 0px 10px;
+    font-family: 'Literata';
+    width: 100px;
+}
+.navbar li.active,.navbar li:hover{
+    padding: 0px!important;
+    padding-top: 28px!important;
+    font-family: 'Literata';
+    background-color: #77A7C6;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 88%, 0 100%, 0 0);
+clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 88%, 0 100%, 0 0);
+    margin-top: -30px;
+    margin-bottom: -25px;
+    width: 120px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)!important;
+    transition-duration: 0.4s!important;
+}
+.navbar li.active a,.navbar li:hover a{
+    color: white!important;
+    font-weight: 600;
+    transition-duration: 0.2s!important;
+}
+.navbar li:hover{
+    margin-right: 
+    10px;
+    transition-duration: 0.2s;
+}
+.navbar li a{
+    font-size: 18px;
+    transition-duration: 0.2s!important;
+    margin: 0px;
+}
+
+.book-btn{
+    background-color:rgba(255, 255, 255, 0.76);
+    color: #233529;
+    padding: 10px 30px;
+    border-radius: 3px;
+    border:#436175 solid 1px;
+    font-size: 18px; 
+}
+.book-btn:hover{
+    background-color:#77A7C6;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 3px;
+}
+
+.carousel-3{
+    background: url('./img/asthetic-bar.jpg') rgba(0, 0, 0, 0.493);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 800px;
+  }
+  .carousel-2{
+    background: url('./img/chair-outside.jpg') rgba(0, 0, 0, 0.507);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 800px;
+  }
+  .carousel-1{
+    background: url('./img/view.jpg')rgba(0, 0, 0, 0.425);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 800px;
+  }
+
+  .carousel-caption{
+    top: 35%;
+  }
+
+  button {
+    padding: 0.8em 1.8em;
+    border: 1px solid #436175 ;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #436175 ;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background:#77A7C6;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 105%;
+   }
+   
+   button:hover {
+    color: white!important;
+   }
+   
+   .carousel img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card-title{
+    font-family: 'Gilda Display', serif;
+    font-size: 23px;
+}
+
+@media(max-width: 486px){
+    .card{
+        width: 19rem !important;
+        margin-top: 20px;
+      }
+      .button-room{
+        margin-left: -60px;
+      }
+      .tittle-room{
+        font-size: 28px!important;
+      }
+      .welcom-home{
+        font-size: 35px !important;
+      }
+      .facility-box{
+        height:fit-content !important;
+        padding: 10px;
+        border: none !important;
+      }
+      .row-footer{
+        margin-left:0px !important;
+      }
+      .logo-footer{
+        margin-left:-70px !important;
+      }
+      .navbar li.active,.navbar li:hover{
+        margin-bottom: -15px;
+        margin-top: -10px !important;
+        padding-top: 10px !important;
+      }
+      .box{
+        padding: 20px!important;
+      }
+      .map{
+        width:270px !important;
+        margin-left: 0px !important;
+      }
+      .map-1{
+        width:290px !important;
+        margin-left: 0px !important;
+        margin-bottom: 30px;
+      }
+      .carousel-item .shadow-1-strong {
+        width: 100%;
+        left: 20px;
+        margin-right: 40px;
+      }
+    }
+
+    @media(max-width: 1000px){
+      .card{
+          width: 19rem !important;
+          margin-top: 20px;
+        }
+        .button-room{
+          margin-left: -60px;
+        }
+        .tittle-room{
+          font-size: 28px!important;
+        }
+        .welcom-home{
+          font-size: 35px !important;
+        }
+        .facility-box{
+          height:fit-content !important;
+          padding: 10px;
+          border: none !important;
+        }
+        .row-footer{
+          margin-left:0px !important;
+        }
+        .logo-footer{
+          margin-left:-70px !important;
+        }
+        .navbar li.active,.navbar li:hover{
+          margin-bottom: -15px;
+          margin-top: -10px !important;
+          padding-top: 10px !important;
+        }
+        .box{
+          padding: 20px!important;
+        }
+        .map{
+          width:270px !important;
+          margin-left: 0px !important;
+        }
+        .map-1{
+          width:290px !important;
+          margin-left: 0px !important;
+          margin-bottom: 30px;
+        }
+      }
+
+#facilities{
+    background: url("./img/chair-outside.jpg") rgba(0, 0, 0, 0.692);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+    .facility-box{
+        border-right: 2px;
+        border-left: 0;
+        border-style: solid;
+        height: 170px;
+      /*  border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
+        border-image: linear-gradient(to bottom, #566cad, #bfbdcf, #566cad) 1 100%;
+        color: white;
+        padding: 0px 15px;
+      }
+      .facilities-title{
+        font-family: 'Gilda Display', serif;
+      }
+      #restaurant{
+        background: url("./img/image\ \(8\).png") rgba(0, 0, 0, 0.192);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+    #footer{
+        background: url("./img/footer.jpg") rgba(0, 0, 0, 0.322);
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: multiply;
+    }
+
+    /*****About Section*******/
+    #about{
+        background: url("./img/chair-outside.jpg") rgba(0, 0, 0, 0.397);
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: multiply;
+        padding-bottom: 70px;
+        height: 700px;
+        display: flex;
+        align-items: center!important;
+    }
+    .restaurant{
+        background: url("./img/image\ \(8\).png") rgba(0, 0, 0, 0.192);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+        border-radius: 34px;
+    }
+
+    /*******Room Section********/
+    #room{
+        background: url("./img/room-2.jpg") rgba(0, 0, 0, 0.397);
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-blend-mode: multiply;
+        padding-bottom: 70px;
+        height: 700px;
+        display: flex;
+        align-items: center!important;
+    }
+
+ 
+/*******Contact Section******/
+.box{
+  padding: 60px;
+  background: url("../img/bg-pattent2\ -\ Copy.jpg") rgba(167, 201, 211, 0.719);
+  margin-left: 30px;
+  margin-right: 30px;
+  transition: transform 500ms ease;
+}
+.box:hover{
+  transform: scale(1.05);
+  transition: transform 500ms ease;
+}
